@@ -13,7 +13,7 @@ ext_modules = [
             pybind11.get_include(),
         ],
         language='c++',
-        cxx_std=17,
+        extra_compile_args=['-std=c++17'],
     ),
 ]
 
