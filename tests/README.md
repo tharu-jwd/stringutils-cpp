@@ -1,10 +1,10 @@
-# StringUtils-CPP Test Suite
+# pystringpp Test Suite
 
-Comprehensive test coverage for the StringUtils-CPP library with >95% code coverage achievement.
+Comprehensive test coverage for the pystringpp library with >95% code coverage achievement.
 
 ## Overview
 
-This test suite provides thorough validation of all StringUtils-CPP functions:
+This test suite provides thorough validation of all pystringpp functions:
 - `reverse_string()` - String reversal operations
 - `count_char()` - Character counting functionality  
 - `find_pattern()` - Pattern matching with overlapping support
@@ -15,7 +15,7 @@ This test suite provides thorough validation of all StringUtils-CPP functions:
 
 ### Core Test Files
 
-- **`test_stringutils.py`** - Main pytest-compatible test suite with fixtures
+- **`test_pystringpp.py`** - Main pytest-compatible test suite with fixtures
 - **`simple_test_runner.py`** - Standalone test runner with 95% coverage
 - **`run_tests.py`** - Advanced test runner with detailed reporting
 - **`pytest.ini`** - Pytest configuration
@@ -55,10 +55,10 @@ python3 simple_test_runner.py
 ### Full pytest Suite
 ```bash
 # If pytest works in your environment
-python3 -m pytest tests/test_stringutils.py -v
+python3 -m pytest tests/test_pystringpp.py -v
 
 # Or run with coverage
-python3 -m pytest tests/test_stringutils.py --cov=stringutils --cov-report=html
+python3 -m pytest tests/test_pystringpp.py --cov=pystringpp --cov-report=html
 ```
 
 ### Advanced Testing
@@ -232,7 +232,7 @@ print('Testing DNA functions...')
 
 # Test performance only
 python3 -c "
-from tests.test_stringutils import TestPerformance, su
+from tests.test_pystringpp import TestPerformance, su
 perf = TestPerformance()
 perf.test_reverse_string_performance()
 print('Performance tests passed')
@@ -241,7 +241,7 @@ print('Performance tests passed')
 
 ### Custom Test Integration
 ```python
-from tests.test_stringutils import su
+from tests.test_pystringpp import su
 
 def my_custom_test():
     # Use the same functions tested in the suite

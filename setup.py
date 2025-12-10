@@ -3,9 +3,9 @@ import pybind11
 
 ext_modules = [
     Extension(
-        'pystring',
+        'pystringpp',
         [
-            'src/stringutils.cpp',
+            'src/pystringpp.cpp',
             'src/bindings.cpp',
         ],
         include_dirs=[
@@ -18,9 +18,9 @@ ext_modules = [
 ]
 
 setup(
-    name="pystring",
+    name="pystringpp",
     version="0.1.0",
-    author="Your Name", 
+    author="tharu-jwd", 
     description="High-performance string processing library with C++/Python bindings",
     ext_modules=ext_modules,
     zip_safe=False,

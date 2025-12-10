@@ -1,4 +1,8 @@
-# pystring++
+<div align="center">
+  <img src="pystringpp-logo.png" alt="pystringpp Logo" width="600">
+</div>
+
+# pystringpp
 
 C++/Python integration using pybind11 for high-performance string processing.
 
@@ -18,8 +22,8 @@ C++ implementation provides significant speedups over pure Python:
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/pystring++.git
-cd pystring++
+git clone https://github.com/tharu-jwd/pystringpp.git
+cd pystringpp
 pip install pybind11
 pip install -e .
 ```
@@ -27,7 +31,7 @@ pip install -e .
 ## Usage
 
 ```python
-import pystring as su
+import pystringpp as su
 
 result = su.reverse_string("hello world")
 count = su.count_char("programming", "m")
@@ -37,7 +41,7 @@ positions = su.find_pattern("abcabcabc", "abc")
 ## Testing
 
 ```bash
-python test_stringutils.py
+python test_pystringpp.py
 ```
 
 ## Technical Details

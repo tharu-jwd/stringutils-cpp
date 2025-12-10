@@ -3,10 +3,10 @@ requires = ["setuptools>=45", "wheel", "pybind11>=2.6.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pystring"
+name = "pystringpp"
 version = "0.1.0"
 description = "High-performance string processing library with C++/Python bindings"
-authors = [{name = "Your Name"}]
+authors = [{name = "tharu-jwd"}]
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = ["pybind11>=2.6.0"]
