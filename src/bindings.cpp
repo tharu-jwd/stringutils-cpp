@@ -4,8 +4,8 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(stringutils_cpp, m) {
-    m.doc() = "High-performance string processing library";
+PYBIND11_MODULE(pystring, m) {
+    m.doc() = "High-performance string processing library with C++/Python bindings";
     
     // String processing functions
     m.def("reverse_string", &stringutils::reverse_string, "Reverse a string");

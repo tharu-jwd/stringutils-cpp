@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Comprehensive test suite for StringUtils-CPP package.
+Comprehensive test suite for pystring++ package.
 
 Tests cover all core functions with edge cases, error handling, and performance validation.
 Designed to achieve >90% code coverage with pytest framework.
@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'python'))
 
 # Try importing the C++ extension, fall back to pure Python implementations
 try:
-    import stringutils_cpp as su_cpp
+    import pystring as su_cpp
     HAS_CPP_EXTENSION = True
     print(f"✓ Testing with C++ extension (version {getattr(su_cpp, '__version__', 'unknown')})")
 except ImportError:
@@ -767,7 +767,7 @@ class TestCppExtensionSpecific:
     
     def test_module_attributes(self):
         """Test C++ module has expected attributes."""
-        import stringutils_cpp as su_cpp
+        import pystring as su_cpp
         
         # Should have version attribute
         assert hasattr(su_cpp, '__version__')

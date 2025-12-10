@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Test suite for StringUtils-CPP
+Test suite for pystring++
 """
 
 def test_functions():
     """Test string processing functions"""
     try:
-        import stringutils_cpp as su
+        import pystring as su
         print("PASS: C++ extension loaded")
     except ImportError:
         print("FAIL: C++ extension not available")
@@ -30,7 +30,7 @@ def test_functions():
     return True
 
 def main():
-    print("StringUtils-CPP Test Suite")
+    print("pystring++ Test Suite")
     print("=" * 30)
     
     if test_functions():

@@ -1,4 +1,4 @@
-# StringUtils-CPP
+# pystring++
 
 C++/Python integration using pybind11 for high-performance string processing.
 
@@ -18,8 +18,8 @@ C++ implementation provides significant speedups over pure Python:
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/stringutils-cpp.git
-cd stringutils-cpp
+git clone https://github.com/your-username/pystring++.git
+cd pystring++
 pip install pybind11
 pip install -e .
 ```
@@ -27,7 +27,7 @@ pip install -e .
 ## Usage
 
 ```python
-import stringutils_cpp as su
+import pystring as su
 
 result = su.reverse_string("hello world")
 count = su.count_char("programming", "m")
